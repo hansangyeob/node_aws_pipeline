@@ -7,6 +7,8 @@ app.get('/',(req,res)=>{
 });
 
 
-app.listen(3000,()=> {
-    console.log('Server is on.')
+
+const port = process.env.port || 3000;
+app.listen(port,()=> {
+    console.log('listening to server.')
 });
