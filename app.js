@@ -22,7 +22,7 @@ app.get('/add', function(req, res) {
 
 app.get('/process',function(req,res){
     var myStr = req.query.myStr
-    var input = myStr.replace(/  +/g, ' ');
+    var input = myStr.replace(/  +/g, ' ').trim();
     res.send(input);  
 });
 
