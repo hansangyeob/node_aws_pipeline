@@ -22,13 +22,8 @@ app.get('/add', function(req, res) {
 
 app.get('/process',function(req,res){
     var myStr = String(req.query.myStr)
-
-    if(!isNaN(myStr)){
-        var input = myStr.replace(/  +/g, ' ').trim();
-        res.send(input.toString());
-    }else{
-        res.send("a, b must have duplicated space.")
-    }
+    var input = myStr.replace(/  +/g, ' ').trim();
+    res.send(input.toString());
 });
 
 
