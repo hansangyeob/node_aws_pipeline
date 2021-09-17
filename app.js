@@ -21,11 +21,10 @@ app.get('/add', function(req, res) {
 });
 
 app.get('/process',function(req,res){
-    var myStr = req.query.a
+    var myStr = req.query.myStr
     var input = myStr.replace(/  +/g, ' ');
     res.send(input);  
 });
-
 
 
 const port = process.env.port || 3000;
