@@ -9,7 +9,7 @@ app.get('/',(req,res)=>{
 
 
 app.get('/process',function(req,res){
-    var input = req.query.myStr1;
+    var input = req.query.input;
     res.send(input);
 });
 
